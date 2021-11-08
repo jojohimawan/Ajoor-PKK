@@ -1,0 +1,137 @@
+body {
+    font-family: 'Poppins';
+}
+
+h2 {
+    color: #3B3B60 !important;
+}
+
+/* navbar */
+.nav-item {
+    margin-right: 40px;
+}
+
+.nav-item .nav-link {
+    font-weight: 300;
+    color: #3B3B60 !important;
+}
+
+.nav-item .active {
+    font-weight: 600;
+    color: #7F7FD5 !important;
+}
+.nav-item .btn {
+    background-color: #ECECF8 !important;
+    color: #7F7FD5;
+    border: none !important;
+    border-radius: 30px !important;
+    padding: 12px 40px;
+}
+
+/* hero */
+.title {
+    color: #7E8CAC;
+    font-weight: 400;
+}
+
+h1, .lead {
+    color: #3B3B60 !important;
+}
+
+
+.btnhero {
+    background-color: #7F7FD5 !important;
+    border-radius : 30px !important;
+    padding: 12px 40px;
+}
+
+/* Keunggulan */
+.keunggulan {
+    background-color: #F9FAFF !important;
+}
+
+.figure h5, .figure p {
+    color: #3B3B60 !important;
+}
+
+/* Aset Pilihan */
+.card {
+    border: 0;
+}
+
+.freebie {
+    background-color: #91EAE4 !important;
+    color: #24726C;
+    border: none !important;
+    border-radius: 30px !important;
+    padding: 12px 40px;
+}
+
+.premium {
+    background-color: #86A8E7 !important;
+    color: #1D3B72;
+    border: none !important;
+    border-radius: 30px !important;
+    padding: 12px 40px;
+}
+
+.card-title {
+    color: #3B3B60;
+}
+
+.card-text {
+    color: #7E8CAC;
+    font-weight: 200;
+}
+
+.cardhead a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 8px;
+    background-color: rgba(1, 3, 45, 0.6);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .cardhead:hover a {
+    opacity: 1;
+  }
+
+/* Mengapa */
+.mengapa {
+    background-color: #F9FAFF !important;
+}
+
+.why h5, .why p {
+    color: #3B3B60 !important;
+}
+
+.why p {
+    font-weight: 200;
+}
+
+/* Data */
+.stats .text-start h2, .data .row .col h2 {
+    color: #3B3B60 !important;
+}
+
+.data .row .col p {
+    color: #7E8CAC !important;
+    font-weight: 200;
+}
+
+.border-end {
+    border-color: #7E8CAC !important;
+}
+
+/* Footer */
+.footer .container .footertext p {
+    color: #7E8CAC !important;
+    font-weight: 200;
+}
+
+.border-top {
+    border-color: #7E8CAC !important;
+}
