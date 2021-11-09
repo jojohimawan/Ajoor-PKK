@@ -135,3 +135,30 @@ h1, .lead {
 .border-top {
     border-color: #7E8CAC !important;
 }
+
+/* UI Kit - Header */
+.uikit-header {
+    background-color: #F9FAFF !important;
+}
+
+.uikit-header .container .text-center h1{
+    color: #3B3B60 !important;
+}
+
+.uikit-header .container .text-center p {
+    color: #7E8CAC !important;
+}
+
+/* Pagination */
+.aktif {
+    background: linear-gradient(180deg, #7F7FD5 0%, #86A8E7 49.48%, #91EAE4 100%) !important;
+    border: none;
+}
+
+.nonaktif {
+  color: #7E8CAC !important;
+}
+
+.pageicon {
+    color: #7E8CAC !important;
+}
