@@ -162,3 +162,76 @@ h1, .lead {
 .pageicon {
     color: #7E8CAC !important;
 }
+
+/* Freebie & Premium */
+.freebie-detail-bk {
+    background-color: #F9FAFF;
+}
+
+.bk-freebie a {
+    text-decoration: none;
+    font-weight: 300;
+    color: #7E8CAC !important;
+}
+
+.bk-freebie-aktif {
+    font-weight: 300;
+    color: #3B3B60 !important;
+}
+
+.freebie-card {
+    background-color: #F9FAFF;
+    border-radius: 30px;
+}
+
+.freebie-card-title, .freebie-card-subtitle, .freebie-card-subprice {
+    color: #3B3B60 !important;
+}
+
+.freebie-card-subprice {
+    font-weight: 300;
+    text-decoration: line-through;
+}
+
+.freebie-card-price {
+    color: #7F7FD5 !important;
+}
+
+.freebie-card-dl-btn {
+    background-color: #7F7FD5 !important;
+    color: #ECECF8;
+    border: none !important;
+    border-radius: 30px !important;
+    padding: 12px;
+    text-decoration:none;
+}
+
+.freebie-card-docs {
+    color: #7E8CAC !important;
+}
+
+.freebie-benefit {
+    background-color: #F9FAFF;
+}
+
+.freebie-benefit-title {
+    font-weight: 300;
+    color: #3B3B60 !important;
+}
+
+.list-group-item {
+    border: none !important;
+    background-color: #F9FAFF !important;
+}
+
+.freebie-benefit-list .list-group-item p {
+    display: inline-block;
+    margin-left: 1rem;
+    color: #3B3B60 !important;
+}
+
+.freebie-benefit-list-disabled {
+    text-decoration: line-through;
+}
+
+
