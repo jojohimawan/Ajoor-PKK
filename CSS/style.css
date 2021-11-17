@@ -234,4 +234,19 @@ h1, .lead {
     text-decoration: line-through;
 }
 
+/* Success Checkout */
+.row-co {
+    margin-top: 214px;
+}
+.sukses-co {
+    width: 342px;
+    height: 300px;
+}
 
+.co-home .btn{
+    background-color: #7F7FD5 !important;
+    color: #ECECF8;
+    border: none !important;
+    border-radius: 30px !important;
+    padding: 12px 40px;
+}
