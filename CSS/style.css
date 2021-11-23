@@ -223,7 +223,7 @@ h1, .lead {
 
 .list-group-item {
     border: none !important;
-    background-color: #F9FAFF !important;
+    background-color: transparent !important;
 }
 
 .freebie-benefit-list .list-group-item p {
@@ -300,11 +300,22 @@ h1, .lead {
     color: #ECECF8 !important;
 }
   
- .login-user .left img {
+.login-user .left img {
     margin-top: 200px;
-  } 
+} 
 
-  .register-btn {
+.register-btn {
     background-color: #ECECF8 !important;
     color: #3B3B60 !important;
-  }
+}
+
+/* Pricing */
+
+.pricing-card {
+    background-color: #F9FAFF;
+    border-radius: 0px 100px;
+}
+
+.pricing-premium {
+    background: linear-gradient(180deg, #7F7FD5 0%, #86A8E7 20.83%, #91EAE4 69.27%);
+} 
