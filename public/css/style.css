@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+    font-family: "Poppins";
+}
+
+h2 {
+    color: #3b3b60 !important;
+}
+
+/* navbar */
+.nav-item {
+    margin-right: 40px;
+}
+
+.nav-item .nav-link {
+    font-weight: 300;
+    color: #3b3b60 !important;
+}
+
+.nav-item .active {
+    font-weight: 600;
+    color: #7f7fd5 !important;
+}
+.nav-item .btn {
+    background-color: #ececf8 !important;
+    color: #7f7fd5;
+    border: none !important;
+    border-radius: 30px !important;
+    padding: 12px 40px;
+}
+
+/* hero */
+.title {
+    color: #7e8cac;
+    font-weight: 400;
+}
+
+h1,
+.lead {
+    color: #3b3b60 !important;
+}
+
+.btnhero {
+    background-color: #7f7fd5 !important;
+    border-radius: 30px !important;
+    padding: 12px 40px;
+}
+
+/* Keunggulan */
+.keunggulan {
+    background-color: #f9faff !important;
+}
+
+.figure h5,
+.figure p {
+    color: #3b3b60 !important;
+}
+
+/* Aset Pilihan */
+.card {
+    border: 0;
+}
+
+.freebie {
+    background-color: #91eae4 !important;
+    color: #24726c;
+    border: none !important;
+    border-radius: 30px !important;
+    padding: 12px 40px;
+}
+
+.premium {
+    background-color: #86a8e7 !important;
+    color: #1d3b72;
+    border: none !important;
+    border-radius: 30px !important;
+    padding: 12px 40px;
+}
+
+.card-title {
+    color: #3b3b60;
+}
+
+.card-text {
+    color: #7e8cac;
+    font-weight: 200;
+}
+
+.cardhead a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 8px;
+    background-color: rgba(1, 3, 45, 0.6);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.cardhead:hover a {
+    opacity: 1;
+}
+
+/* Mengapa */
+.mengapa {
+    background-color: #f9faff !important;
+}
+
+.why h5,
+.why p {
+    color: #3b3b60 !important;
+}
+
+.why p {
+    font-weight: 200;
+}
+
+/* Data */
+.stats .text-start h2,
+.data .row .col h2 {
+    color: #3b3b60 !important;
+}
+
+.data .row .col p {
+    color: #7e8cac !important;
+    font-weight: 200;
+}
+
+.border-end {
+    border-color: #7e8cac !important;
+}
+
+/* Footer */
+.footer .container .footertext p {
+    color: #7e8cac !important;
+    font-weight: 200;
+}
+
+.border-top {
+    border-color: #7e8cac !important;
+}
+
+/* UI Kit - Header */
+.uikit-header {
+    background-color: #f9faff !important;
+}
+
+.uikit-header .container .text-center h1 {
+    color: #3b3b60 !important;
+}
+
+.uikit-header .container .text-center p {
+    color: #7e8cac !important;
+}
+
+/* Pagination */
+.aktif {
+    background: linear-gradient(
+        180deg,
+        #7f7fd5 0%,
+        #86a8e7 49.48%,
+        #91eae4 100%
+    ) !important;
+    border: none;
+}
+
+.nonaktif {
+    color: #7e8cac !important;
+}
+
+.pageicon {
+    color: #7e8cac !important;
+}
+
+/* Freebie & Premium */
+.freebie-detail-bk {
+    background-color: #f9faff;
+}
+
+.bk-freebie a {
+    text-decoration: none;
+    font-weight: 300;
+    color: #7e8cac !important;
+}
+
+.bk-freebie-aktif {
+    font-weight: 300;
+    color: #3b3b60 !important;
+}
+
+.freebie-card {
+    background-color: #f9faff;
+    border-radius: 30px;
+}
+
+.freebie-card-title,
+.freebie-card-subtitle,
+.freebie-card-subprice {
+    color: #3b3b60 !important;
+}
+
+.freebie-card-subprice {
+    font-weight: 300;
+    text-decoration: line-through;
+}
+
+.freebie-card-price {
+    color: #7f7fd5 !important;
+}
+
+.freebie-card-dl-btn {
+    background-color: #7f7fd5 !important;
+    color: #ececf8;
+    border: none !important;
+    border-radius: 30px !important;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.freebie-card-docs {
+    color: #7e8cac !important;
+}
+
+.freebie-benefit {
+    background-color: #f9faff;
+}
+
+.freebie-benefit-title {
+    font-weight: 300;
+    color: #3b3b60 !important;
+}
+
+.list-group-item {
+    border: none !important;
+    background-color: transparent !important;
+}
+
+.freebie-benefit-list .list-group-item p {
+    display: inline-block;
+    margin-left: 1rem;
+    color: #3b3b60 !important;
+}
+
+.freebie-benefit-list-disabled {
+    text-decoration: line-through;
+}
+
+/* Success Checkout */
+.row-co {
+    margin-top: 214px;
+}
+.sukses-co {
+    width: 342px;
+    height: 300px;
+}
+
+.co-home .btn {
+    background-color: #7f7fd5 !important;
+    color: #ececf8;
+    border: none !important;
+    border-radius: 30px !important;
+    padding: 12px 40px;
+}
+
+/* Login Page */
+.login-user .right {
+    width: 50%;
+    float: left;
+    padding: 120px;
+    background: linear-gradient(62.78deg, #3b3b60 -8.76%, #5e5e9c 189.61%);
+}
+
+.login-user .right .people {
+    margin-top: 100px;
+    height: 170px;
+}
+
+.login-user .right .logo {
+    height: 42px;
+    margin-bottom: 100px;
+}
+
+.login-user .right .btn-border {
+    border-radius: 50px;
+    padding: 12px 80px 12px 80px;
+}
+
+.login-user .right .btn-google-login {
+    margin-top: 40px;
+}
+
+.login-user .right .btn-google-login .icon {
+    margin-right: 8px;
+}
+
+.login-user .left {
+    width: 50%;
+    min-height: 900px;
+    float: left;
+}
+
+.form-control {
+    border: 1px solid #3b3b60 !important;
+    border-radius: 30px;
+    padding: 12px 183px 11px 30px;
+}
+
+.right h2,
+.right p {
+    color: #ececf8 !important;
+}
+
+.login-user .left img {
+    margin-top: 100px;
+}
+
+.register-btn {
+    background-color: #ececf8 !important;
+    color: #3b3b60 !important;
+}
+
+/* Pricing */
+
+.pricing-card {
+    background-color: #f9faff;
+    border-radius: 0px 100px;
+}
+
+.pricing-premium {
+    background: linear-gradient(
+        180deg,
+        #7f7fd5 0%,
+        #86a8e7 20.83%,
+        #91eae4 69.27%
+    );
+}
