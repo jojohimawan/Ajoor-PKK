@@ -1,7 +1,5 @@
 @extends('templates.master')
 
-@section('title', 'Ajoor | Home')
-
 @section('content')
     <!-- Hero -->
     <section class="hero mb-5">
