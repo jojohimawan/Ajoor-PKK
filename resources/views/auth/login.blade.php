@@ -21,7 +21,7 @@
 
         <h2 class="fw-bold mb-2 freebie-card-title text-start">Masuk Akun</h2>
         <p class="text-start mb-5">Masuk untuk unduh aset.</p>
-        <form action="{{ route('login') }}" method="POST">
+        <form action="{{ route('user.login') }}" method="POST">
           @csrf
           <div class="mb-3">
             <label for="email" class="form-label">Email address</label>
@@ -38,7 +38,7 @@
           </div>
           <div class="d-grid gap-2">
             <button type="submit" class="btn btn-success freebie-card-dl-btn mb-3">Masuk Akun</button>
-            <a href="{{ route('register') }}" class="btn btn-success freebie-card-dl-btn register-btn">Daftar</a>
+            <a href="{{ route('user.register') }}" class="btn btn-success freebie-card-dl-btn register-btn">Daftar</a>
             {{-- <button class="btn btn-success freebie-card-dl-btn register-btn">Daftar</button> --}}
           </div>
         </form>

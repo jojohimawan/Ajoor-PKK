@@ -39,7 +39,7 @@
                   <li><a class="dropdown-item" href="#">Profile</a></li>
                   <li><hr class="dropdown-divider"></li>
                   <li>
-                    <form action="{{ route('logout') }}" method="POST">
+                    <form action="{{ route('user.logout') }}" method="POST">
                       @csrf
                       <button type="submit" class="dropdown-item">Logout</button>
                     </form>
@@ -48,11 +48,11 @@
               </li>
             @else
                 <li class="nav-item">
-                  <a href="{{ route('login') }}" class="nav-item">
+                  <a href="{{ route('user.login') }}" class="nav-item">
                     <button class="btn" type="submit">Masuk</button>
                   </a>
                 </li>
-              </ul>
+            </ul>
             @endauth
 
           </div>

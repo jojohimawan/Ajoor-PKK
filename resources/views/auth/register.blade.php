@@ -9,7 +9,7 @@
 
         <h2 class="fw-bold mb-2 freebie-card-title text-start">Buat Akun</h2>
         <p class="text-start mb-5">Buat akun untuk masuk ke Ajoor.</p>
-        <form action="{{ route('register') }}" method="POST">
+        <form action="{{ route('user.register') }}" method="POST">
           @csrf
           <div class="mb-3">
             <label for="username" class="form-label">Username</label>
@@ -40,7 +40,7 @@
           </div>
           <div class="d-grid gap-2">
               <button type="submit" class="btn btn-success freebie-card-dl-btn mb-3">Buat Akun</button>
-              <a href="{{ route('login') }}" class="btn btn-success freebie-card-dl-btn register-btn">Login Page</a>
+              <a href="{{ route('user.login') }}" class="btn btn-success freebie-card-dl-btn register-btn">Login Page</a>
               {{-- <button class="btn btn-success freebie-card-dl-btn register-btn">Daftar</button> --}}
             </div>
         </form>
