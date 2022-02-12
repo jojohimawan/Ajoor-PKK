@@ -3,7 +3,7 @@
 @section('header-content')
     <div class="row mb-2">
         <div class="col-sm-6">
-            <h1 class="m-0">Users</h1>
+            <h1 class="m-0">Roles</h1>
         </div><!-- /.col -->
         {{-- <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -23,19 +23,15 @@
                         <thead>
                             <tr>
                                 <th>ID</th>
-                                <th>Username</th>
-                                <th>Role</th>
-                                <th>Email</th>
+                                <th>Name</th>
                                 <th>Created at</th>
                             </tr>
                         </thead>
                         <tbody>
-                            @forelse ($getUser as $item)
+                            @forelse ($getRole as $item)
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
-                                    <td>{{ $item->username }}</td>
-                                    <td>{{ $item->role->name }}</td>
-                                    <td>{{ $item->email }}</td>
+                                    <td>{{ $item->name }}</td>
                                     <td>{{ $item->created_at }}</td>
                                 </tr>
                             @empty

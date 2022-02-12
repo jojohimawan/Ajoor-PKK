@@ -44,15 +44,15 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="product" class="nav-link {{ ($title === "Product") ? 'active' : '' }}">
               <i class="nav-icon fas fa-copy"></i>
               <p>
                 Product
-                <i class="fas fa-angle-left right"></i>
+                {{-- <i class="fas fa-angle-left right"></i> --}}
                 {{-- <span class="badge badge-info right">2</span> --}}
               </p>
             </a>
-            <ul class="nav nav-treeview">
+            {{-- <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="product" class="nav-link" {{ request()->is('/') ? 'active' : ''}}>
                   <i class="far fa-circle nav-icon"></i>
@@ -67,10 +67,10 @@
                   <p>Create Product</p>
                 </a>
               </li>
-            </ul>
+            </ul> --}}
           </li>
           <li class="nav-item">
-            <a href="category" class="nav-link" {{ request()->is('/') ? 'active' : ''}}>
+            <a href="category" class="nav-link {{ ($title === "Category") ? 'active' : '' }}">
               <i class="nav-icon fas fa-bars"></i>
               <p>
                 Category
@@ -86,10 +86,18 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="user" class="nav-link {{ ($title === "User") ? 'active' : '' }}">
+            <a href="customer" class="nav-link {{ ($title === "Customer") ? 'active' : '' }}">
               <i class="nav-icon fas fa-users"></i>
               <p>
                 User
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="role" class="nav-link {{ ($title === "Role") ? 'active' : '' }}">
+              <i class="nav-icon fas fa-user-tag"></i>
+              <p>
+                Role
               </p>
             </a>
           </li>
