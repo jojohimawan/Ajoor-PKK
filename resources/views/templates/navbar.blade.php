@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
           <a class="navbar-brand" href="/">
-              <img src="assets/Logo.jpg" alt="" width="48" height="60">
+              <img src="{{ asset('assets/ajoor-logo.png') }}" alt="" width="48" height="60">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -12,16 +12,16 @@
                 <a class="nav-link {{ ($title === "") ? 'active' : '' }}" href="/">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link {{ ($title === "| Ui Kit") ? 'active' : '' }}" href="/ui-kit">UI Kit</a>
+                <a class="nav-link {{ ($title === "| UI Kit") ? 'active' : '' }}" href="{{ route('uikit') }}">UI Kit</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link {{ ($title === "| Template") ? 'active' : '' }}" href="/template">Template</a>
+                <a class="nav-link {{ ($title === "| Template") ? 'active' : '' }}" href="{{ route('template') }}">Template</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link {{ ($title === "| Icon Set") ? 'active' : '' }}" href="/icon-set">Icon Set</a>
+                <a class="nav-link {{ ($title === "| Icon Set") ? 'active' : '' }}" href="{{ route('iconset') }}">Icon Set</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link {{ ($title === "| Ilustrasi") ? 'active' : '' }}" href="/ilustrasi">Ilustrasi</a>
+                <a class="nav-link {{ ($title === "| Ilustrasi") ? 'active' : '' }}" href="{{ route('ilustrasi') }}">Ilustrasi</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link {{ ($title === "| Dokumentasi") ? 'active' : '' }}" href="{{ route('dokumentasi') }}">Dokumentasi</a>

@@ -93,7 +93,6 @@ class CategoryController extends Controller
 
         Category::Where('id', request('categoryid'))->update($validatedCategory);
 
-        // $request->session()->flash('success', 'Registration successfull! Please login');
         return redirect()->route('category')->with('success', 'Data berhasil diubah!');
     }
 

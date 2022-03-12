@@ -67,12 +67,12 @@
                                 <h1 class="mb-4 fw-bold">IDR 0,-</h1>
                                 <h5 class="mb-1">Benefit</h5>
                                 <ul class="list-group freebie-benefit-list">
-                                    <li class="list-group-item ps-0"><img src="./Assets/Tick Square.png" alt=""><p class="ms-2 fw-normal">Project Master</p></li>
-                                    <li class="list-group-item ps-0"><img src="./Assets/Tick Square.png" alt=""><p class="ms-2 fw-normal">Quick Start Guide</p></li>
-                                    <li class="list-group-item ps-0"><img src="./Assets/Tick Square.png" alt=""><p class="ms-2 fw-normal">Ready to Use</p></li>
-                                    <li class="list-group-item ps-0"><img src="./Assets/Tick Square Disabled.png" alt=""><p class="ms-2 fw-normal freebie-benefit-list-disabled">Grid System Design</p></li>
-                                    <li class="list-group-item ps-0"><img src="./Assets/Tick Square Disabled.png" alt=""><p class="ms-2 fw-normal freebie-benefit-list-disabled">Private Group (Design Consulting)</p></li>
-                                    <li class="list-group-item ps-0"><img src="./Assets/Tick Square Disabled.png" alt=""><p class="ms-2 fw-normal freebie-benefit-list-disabled">Free Design Updates</p></li>
+                                    <li class="list-group-item ps-0"><img src="{{ asset('assets/Tick Square.png') }}" alt=""><p class="ms-2 fw-normal">Project Master</p></li>
+                                    <li class="list-group-item ps-0"><img src="{{ asset('assets/Tick Square.png') }}" alt=""><p class="ms-2 fw-normal">Quick Start Guide</p></li>
+                                    <li class="list-group-item ps-0"><img src="{{ asset('assets/Tick Square.png') }}" alt=""><p class="ms-2 fw-normal">Ready to Use</p></li>
+                                    <li class="list-group-item ps-0"><img src="{{ asset('assets/Tick Square Disabled.png') }}" alt=""><p class="ms-2 fw-normal freebie-benefit-list-disabled">Grid System Design</p></li>
+                                    <li class="list-group-item ps-0"><img src="{{ asset('assets/Tick Square Disabled.png') }}" alt=""><p class="ms-2 fw-normal freebie-benefit-list-disabled">Private Group (Design Consulting)</p></li>
+                                    <li class="list-group-item ps-0"><img src="{{ asset('assets/Tick Square Disabled.png') }}" alt=""><p class="ms-2 fw-normal freebie-benefit-list-disabled">Free Design Updates</p></li>
                                 </ul>
                             </div>
                         </div>
@@ -85,12 +85,12 @@
                                 <h1 class="mb-4 fw-bold">IDR 250K,-</h1>
                                 <h5 class="mb-1">Benefit</h5>
                                 <ul class="list-group freebie-benefit-list">
-                                    <li class="list-group-item ps-0"><img src="./Assets/Tick Square.png" alt=""><p class="ms-2 fw-normal">Project Master</p></li>
-                                    <li class="list-group-item ps-0"><img src="./Assets/Tick Square.png" alt=""><p class="ms-2 fw-normal">Quick Start Guide</p></li>
-                                    <li class="list-group-item ps-0"><img src="./Assets/Tick Square.png" alt=""><p class="ms-2 fw-normal">Ready to Use</p></li>
-                                    <li class="list-group-item ps-0"><img src="./Assets/Tick Square.png" alt=""><p class="ms-2 fw-normal">Grid System Design</p></li>
-                                    <li class="list-group-item ps-0"><img src="./Assets/Tick Square.png" alt=""><p class="ms-2 fw-normal">Private Group (Design Consulting)</p></li>
-                                    <li class="list-group-item ps-0"><img src="./Assets/Tick Square.png" alt=""><p class="ms-2 fw-normal">Free Design Updates</p></li>
+                                    <li class="list-group-item ps-0"><img src="{{ asset('assets/Tick Square.png') }}" alt=""><p class="ms-2 fw-normal">Project Master</p></li>
+                                    <li class="list-group-item ps-0"><img src="{{ asset('assets/Tick Square.png') }}" alt=""><p class="ms-2 fw-normal">Quick Start Guide</p></li>
+                                    <li class="list-group-item ps-0"><img src="{{ asset('assets/Tick Square.png') }}" alt=""><p class="ms-2 fw-normal">Ready to Use</p></li>
+                                    <li class="list-group-item ps-0"><img src="{{ asset('assets/Tick Square.png') }}" alt=""><p class="ms-2 fw-normal">Grid System Design</p></li>
+                                    <li class="list-group-item ps-0"><img src="{{ asset('assets/Tick Square.png') }}" alt=""><p class="ms-2 fw-normal">Private Group (Design Consulting)</p></li>
+                                    <li class="list-group-item ps-0"><img src="{{ asset('assets/Tick Square.png') }}" alt=""><p class="ms-2 fw-normal">Free Design Updates</p></li>
                                 </ul>
                             </div>
                         </div>

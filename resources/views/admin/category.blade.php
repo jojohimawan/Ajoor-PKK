@@ -40,7 +40,6 @@
                             <tr>
                                 <th>ID</th>
                                 <th>Name</th>
-                                {{-- <th>Created at</th> --}}
                                 <th>Action</th>
                             </tr>
                         </thead>
@@ -49,7 +48,6 @@
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
                                     <td>{{ $item->name }}</td>
-                                    {{-- <td>{{ $item->created_at }}</td> --}}
                                     <td>
                                         <button class="btn btn-flat btn-danger" data-toggle="modal" data-target="#exampleModalDelete{{$item->id}}"><i class="fa fa-trash"></i></button>
                                         <button class="btn btn-flat btn-warning" data-toggle="modal" data-target="#exampleModal{{$item->id}}"><i class="fa fa-edit"></i></button>

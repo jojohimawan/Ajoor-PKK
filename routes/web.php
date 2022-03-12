@@ -8,6 +8,7 @@ use App\Http\Controllers\DokumentasiController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\DataController;
 use App\Http\Controllers\RoleController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
@@ -22,20 +23,9 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
-// Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
-Route::get('/', function () {
-    if (isset(Auth::user()->role_id)) {
-        if (Auth::user()->role_id == 1) {
-            return view('admin.dashboard', [
-                'title' => 'Dashboard',
-            ]);
-        }
-    }
-    return view('pages.home', [
-        'title' => '',
-    ]);
-})->name('home');
+// Route::get('/', [HomeController::class, 'index'])->name('home');
 
 // Auth
 Route::prefix('/user')->group(function () {
@@ -53,6 +43,9 @@ Route::prefix('/user')->group(function () {
 });
 
 Route::get('/product', [ProductController::class, 'index'])->name('product');
+Route::post('/product', [ProductController::class, 'store'])->name('product');
+Route::delete('/product', [ProductController::class, 'delete'])->name('productDelete');
+Route::put('/product', [ProductController::class, 'update'])->name('productUpdate');
 
 Route::get('/category', [CategoryController::class, 'index'])->name('category');
 Route::post('/category', [CategoryController::class, 'store'])->name('category');
@@ -74,32 +67,19 @@ Route::get('/role', [RoleController::class, 'index'])->name('role');
 
 Route::get('/dokumentasi', [DokumentasiController::class, 'index'])->name('dokumentasi');
 
-Route::get('/ui-kit', function () {
-    return view('pages.category.ui-kit.index', [
-        'title' => '| Ui Kit'
-    ]);
-});
+Route::get('/ui-kit', [DataController::class, 'uikit'])->name('uikit');
 
-Route::get('/template', function () {
-    return view('pages.category.template.index', [
-        'title' => '| Template'
-    ]);
-});
+Route::get('/template', [DataController::class, 'template'])->name('template');
 
-Route::get('/icon-set', function () {
-    return view('pages.category.icon-set.index', [
-        'title' => '| Icon Set'
-    ]);
-});
+Route::get('/icon-set', [DataController::class, 'iconset'])->name('iconset');
 
-Route::get('/ilustrasi', function () {
-    return view('pages.category.ilustrasi.index', [
-        'title' => '| Ilustrasi'
-    ]);
-});
+Route::get('/ilustrasi', [DataController::class, 'ilustrasi'])->name('ilustrasi');
 
-Route::get('/premium', function () {
-    return view('pages.category.ui-kit.detail-premium', [
-        'title' => '| Premium'
-    ]);
-});
+Route::get('/detail/{id}', [DataController::class, 'detail'])->name('detail');
+
+
+// Route::get('/premium', function () {
+//     return view('pages.category.ui-kit.detail-premium', [
+//         'title' => '| Premium'
+//     ]);
+// });
