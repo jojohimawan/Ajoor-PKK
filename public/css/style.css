@@ -362,3 +362,12 @@ h1,
         #91eae4 69.27%
     );
 }
+
+.header-premium {
+    background-color: #7f7fd5 !important;
+    color: #ececf8;
+}
+
+.modal-content {
+    border: 0px solid rgba(0, 0, 0, 0.2) !important;
+}

@@ -9,22 +9,22 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link {{ ($title === "") ? 'active' : '' }}" href="/">Home</a>
+                <a class="nav-link {{ ($title === "Ajoor") ? 'active' : '' }}" href="/">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link {{ ($title === "| UI Kit") ? 'active' : '' }}" href="{{ route('uikit') }}">UI Kit</a>
+                <a class="nav-link {{ ($title === "UI Kit") ? 'active' : '' }}" href="{{ route('uikit') }}">UI Kit</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link {{ ($title === "| Template") ? 'active' : '' }}" href="{{ route('template') }}">Template</a>
+                <a class="nav-link {{ ($title === "Template") ? 'active' : '' }}" href="{{ route('template') }}">Template</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link {{ ($title === "| Icon Set") ? 'active' : '' }}" href="{{ route('iconset') }}">Icon Set</a>
+                <a class="nav-link {{ ($title === "Icon Set") ? 'active' : '' }}" href="{{ route('iconset') }}">Icon Set</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link {{ ($title === "| Ilustrasi") ? 'active' : '' }}" href="{{ route('ilustrasi') }}">Ilustrasi</a>
+                <a class="nav-link {{ ($title === "Ilustrasi") ? 'active' : '' }}" href="{{ route('ilustrasi') }}">Ilustrasi</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link {{ ($title === "| Dokumentasi") ? 'active' : '' }}" href="{{ route('dokumentasi') }}">Dokumentasi</a>
+                <a class="nav-link {{ ($title === "Dokumentasi Ajoor") ? 'active' : '' }}" href="{{ route('dokumentasi') }}">Dokumentasi</a>
               </li>
             </ul>
 

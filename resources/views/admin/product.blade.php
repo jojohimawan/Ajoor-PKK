@@ -6,7 +6,6 @@
             <h1 class="m-0">Products</h1>
         </div><!-- /.col -->
         <div class="col-sm-6">
-            {{-- <a href="#" class="btn btn-primary float-right"><i class="fas fa-plus"></i> Create</a> --}}
             <!-- Button trigger modal -->
             <button type="button" class="btn btn-primary float-right" data-toggle="modal" data-target="#exampleModal">
                 <i class="fas fa-plus"></i>
@@ -81,7 +80,7 @@
                                                     <span aria-hidden="true">&times;</span>
                                                 </button>
                                             </div>
-                                            <form action="{{ route('productDelete', $item->id) }}" method="POST">
+                                            <form action="{{ route('user.productDelete', $item->id) }}" method="POST">
                                                 <div class="modal-body">
                                                     @csrf
                                                     @method('DELETE')
@@ -107,7 +106,7 @@
                                                     <span aria-hidden="true">&times;</span>
                                                 </button>
                                             </div> <!-- /.modal-header -->
-                                            <form method="POST" action="{{ route('productUpdate') }}">
+                                            <form method="POST" action="{{ route('user.productUpdate') }}">
                                                 <div class="modal-body">
                                                     @csrf
                                                     @method('PUT')
@@ -124,13 +123,13 @@
                                                     <div class="form-group">
                                                         <label for="type" class="col-form-label">Tipe</label>
                                                         <div class="form-check">
-                                                            <input onchange="changeType('none')" class="form-check-input" type="radio" value="1" name="type" id="type">
+                                                            <input class="form-check-input" type="radio" value="1" name="type" id="type">
                                                             <label class="form-check-label" for="type">
                                                                 Freebie
                                                             </label>
                                                         </div>
                                                         <div class="form-check">
-                                                            <input onchange="changeType('block')" class="form-check-input" type="radio" value="2" name="type" id="type">
+                                                            <input class="form-check-input" type="radio" value="2" name="type" id="type">
                                                             <label class="form-check-label" for="type">
                                                                 Premium
                                                             </label>
@@ -176,7 +175,7 @@
                                                             {{-- <label class="input-group-text" for="inputGroupFile02">Upload</label> --}}
                                                         </div>
                                                     </div>
-                                                    <div id="price_form" class="form-group">
+                                                    <div class="form-group">
                                                         <label for="price" class="col-form-label">Harga</label>
                                                         <input value="{{ $item->price }}" type="number" name="price" class="form-control" id="price">
                                                     </div>
@@ -213,7 +212,7 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div> <!-- /.modal-header -->
-                <form method="POST" action="{{ route('product') }}" enctype="multipart/form-data">
+                <form method="POST" action="{{ route('user.product') }}" enctype="multipart/form-data">
                     @csrf
                     <div class="modal-body">
                         <div class="form-group">
@@ -240,7 +239,7 @@
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input onchange="changeType('block')" class="form-check-input" type="radio" value="2" name="type" id="type">
+                                <input onchange="changeType('block')" class="form-check-input" type="radio" value="2" name="type" id="type" checked>
                                 <label class="form-check-label" for="type">
                                     Premium
                                 </label>

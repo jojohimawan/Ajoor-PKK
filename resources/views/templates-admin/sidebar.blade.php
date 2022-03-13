@@ -6,18 +6,6 @@
       <span class="brand-text font-weight-light">Ajoor</span>
     </a>
 
-    <!-- Sidebar -->
-    {{-- <div class="sidebar">
-      <!-- Sidebar user panel (optional) -->
-      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-        <div class="image">
-          <img src="{{ asset('dist/img/user2-160x160.jpg') }} " class="img-circle elevation-2" alt="User Image">
-        </div>
-        <div class="info">
-          <a href="#" class="d-block">Alexander Pierce</a>
-        </div>
-      </div> --}}
-
       <!-- SidebarSearch Form -->
       {{-- <div class="form-inline">
         <div class="input-group" data-widget="sidebar-search">
@@ -44,12 +32,10 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="product" class="nav-link {{ ($title === "Product") ? 'active' : '' }}">
+            <a href="{{ route('user.product') }}" class="nav-link {{ ($title === "Product") ? 'active' : '' }}">
               <i class="nav-icon fas fa-copy"></i>
               <p>
                 Product
-                {{-- <i class="fas fa-angle-left right"></i> --}}
-                {{-- <span class="badge badge-info right">2</span> --}}
               </p>
             </a>
             {{-- <ul class="nav nav-treeview">
@@ -70,7 +56,7 @@
             </ul> --}}
           </li>
           <li class="nav-item">
-            <a href="category" class="nav-link {{ ($title === "Category") ? 'active' : '' }}">
+            <a href="{{ route('user.category') }}" class="nav-link {{ ($title === "Category") ? 'active' : '' }}">
               <i class="nav-icon fas fa-bars"></i>
               <p>
                 Category
@@ -78,7 +64,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="order" class="nav-link" {{ request()->is('/') ? 'active' : ''}}>
+            <a href="#" class="nav-link" {{ request()->is('/') ? 'active' : ''}}>
               <i class="nav-icon fas fa-boxes"></i>
               <p>
                 Order Details
@@ -86,7 +72,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="customer" class="nav-link {{ ($title === "Customer") ? 'active' : '' }}">
+            <a href="{{ route('user.customer') }}" class="nav-link {{ ($title === "Customer") ? 'active' : '' }}">
               <i class="nav-icon fas fa-users"></i>
               <p>
                 User
@@ -94,7 +80,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="role" class="nav-link {{ ($title === "Role") ? 'active' : '' }}">
+            <a href="{{ route('user.role') }}" class="nav-link {{ ($title === "Role") ? 'active' : '' }}">
               <i class="nav-icon fas fa-user-tag"></i>
               <p>
                 Role

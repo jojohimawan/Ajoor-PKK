@@ -9,7 +9,7 @@ class DokumentasiController extends Controller
     public function index()
     {
         return view('pages.dokumentasi', [
-            'title' => '| Dokumentasi',
+            'title' => 'Dokumentasi Ajoor',
         ]);
     }
 }

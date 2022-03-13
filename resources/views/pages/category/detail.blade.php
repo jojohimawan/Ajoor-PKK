@@ -44,18 +44,29 @@
                             @if ($data->type == 2)
                                 <button class="btn btn-primary premium mb-5">PREMIUM</button>  
                             @endif
+
                             <h2 class="fw-bold mb-2 freebie-card-title">{{ $data->name }}</h2>
                             <h2 class="mb-5 freebie-card-subtitle">{{ $data->category->name }}</h2>
+
                             @if ($data->type == 1)
                                 <h5 class="price mb-1 freebie-card-subprice">IDR 350K</h5>
                                 <h2 class="mb-5 fw-bold freebie-card-price">IDR {{ $data->price }}</h2>
                             @endif
                             @if ($data->type == 2)
-                                <h2 class="mb-5 fw-bold freebie-card-price">IDR {{ $data->price }}</h2>
+                                <h2 class="mb-5 fw-bold freebie-card-price">IDR {{ number_format($data->price) }}</h2>
                             @endif
-                            <a href="#" class="card-link d-grid mb-5">
-                                <button class="btn btn-success freebie-card-dl-btn">DOWNLOAD NOW</button>
-                            </a>
+                            
+                            @if ($data->type == 1)
+                                <a href="{{ route('user.success', $data->id) }}" class="card-link d-grid mb-5">
+                                    <button class="btn btn-success freebie-card-dl-btn">DOWNLOAD NOW</button>
+                                </a>
+                            @endif
+                            @if ($data->type == 2)
+                                <a class="card-link d-grid mb-5" disabled>
+                                    <button type="button" class="btn btn-success freebie-card-dl-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">BUY NOW</button>
+                                </a>
+                            @endif
+
                             <a href="{{ route('dokumentasi') }}" class="freebie-card-docs text-center">
                                 <h5 class="">Pelajari Lisensi Produk</h5>
                             </a>
@@ -120,4 +131,48 @@
     </section>
     @endif
     <!-- Benefit End -->
+
+    <!-- Modal -->
+    <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header header-premium">
+                    <h5 class="modal-title" id="exampleModalLabel">Konfirmasi Pembayaran</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form method="POST" action="{{ route('user.success', $data->id) }}" enctype="multipart/form-data">
+                    @csrf
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-12 col-sm-1">
+                                <ul class="list-group freebie-benefit-list">
+                                    <li class="list-group-item ps-0"><img src="{{ asset('assets/Tick Square.png') }}" alt=""><p class="ms-2">Grid System Design</p></li>
+                                    <li class="list-group-item ps-0"><img src="{{ asset('assets/Tick Square.png') }}" alt=""><p class="ms-2">Private Group (Design Consulting)</p></li>
+                                    <li class="list-group-item ps-0"><img src="{{ asset('assets/Tick Square.png') }}" alt=""><p class="ms-2">Free Design Updates</p></li>
+                                </ul>
+                            </div>
+                            <h5 class="mt-3 mb-3">Transfer Pembayaran</h5>
+                            <ul style="list-style-type:none">
+                                <li><img src="{{ asset('assets/mandiri-logo.png') }}" alt="bank" width="150"></li>
+                                <li>
+                                    <h6 class="mt-4">PT Ajoor Indonesia</h6>
+                                </li>
+                                <li>
+                                    <h6 class="mt-3">0796545800984</h6>
+                                </li>
+                            </ul>
+                            <h5 class="text-end fw-bold freebie-card-price">Total : IDR {{ number_format($data->price) }}</h5>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="container">
+                            <div class="col-md-12 text-center">
+                                <button type="submit" class="col-md-5 btn btn-success freebie-card-dl-btn">Buy Now</button>
+                            </div>
+                        </div>
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection

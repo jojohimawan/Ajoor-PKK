@@ -75,14 +75,14 @@ class ProductController extends Controller
         $data['price'] = $data['type'] == 2 ? $request->price : 0;
         Product::create($data);
 
-        return redirect()->route('product')->with('success', 'Data berhasil ditambahkan!');
+        return redirect()->route('user.product')->with('success', 'Data berhasil ditambahkan!');
     }
 
     public function delete()
     {
         Product::Where('id', request('productid'))->delete();
 
-        return redirect()->route('product')->with('success', 'Data berhasil dihapus!');
+        return redirect()->route('user.product')->with('success', 'Data berhasil dihapus!');
     }
 
     /**
@@ -150,7 +150,7 @@ class ProductController extends Controller
         $data['price'] = $data['type'] == 2 ? $request->price : 0;
         Product::Where('id', request('productid'))->update($data);
 
-        return redirect()->route('product')->with('success', 'Data berhasil diubah!');
+        return redirect()->route('user.product')->with('success', 'Data berhasil diubah!');
     }
 
     /**

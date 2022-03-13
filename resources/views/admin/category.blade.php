@@ -46,7 +46,7 @@
                         <tbody>
                             @forelse ($getCategory as $item)
                                 <tr>
-                                    <td>{{ $loop->iteration }}</td>
+                                    <td>{{ $item->id }}</td>
                                     <td>{{ $item->name }}</td>
                                     <td>
                                         <button class="btn btn-flat btn-danger" data-toggle="modal" data-target="#exampleModalDelete{{$item->id}}"><i class="fa fa-trash"></i></button>
@@ -64,7 +64,7 @@
                                                     <span aria-hidden="true">&times;</span>
                                                 </button>
                                             </div>
-                                            <form action="{{ route('categoryDelete', $item->id) }}" method="POST">
+                                            <form action="{{ route('user.categoryDelete', $item->id) }}" method="POST">
                                                 <div class="modal-body">
                                                     @csrf
                                                     @method('DELETE')
@@ -90,7 +90,7 @@
                                                     <span aria-hidden="true">&times;</span>
                                                 </button>
                                             </div> <!-- /.modal-header -->
-                                            <form method="POST" action="{{ route('categoryUpdate') }}">
+                                            <form method="POST" action="{{ route('user.categoryUpdate') }}">
                                                 <div class="modal-body">
                                                     @csrf
                                                     @method('PUT')
@@ -136,7 +136,7 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div> <!-- /.modal-header -->
-                <form method="POST" action="{{ route('category') }}">
+                <form method="POST" action="{{ route('user.category') }}">
                     @csrf
                     <div class="modal-body">
                         <div class="form-group">

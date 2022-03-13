@@ -22,7 +22,7 @@ class HomeController extends Controller
         $categories = Category::all();
 
         return view('pages.home', [
-            'title' => '',
+            'title' => 'Ajoor',
         ])->with(compact('getProduct', 'categories'));
     }
 }

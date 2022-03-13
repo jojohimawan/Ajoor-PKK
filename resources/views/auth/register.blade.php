@@ -5,7 +5,7 @@
 @section('content')
     <section class="login-user">
       <div class="left p-5">
-        <a href="{{ route('home') }}"><img class="mb-5" src="{{ asset('assets/Logo.jpg') }}" alt="" width="48" height="60"></a>
+        <a href="{{ route('home') }}"><img class="mb-5" src="{{ asset('assets/ajoor-logo.png') }}" alt="" width="48" height="60"></a>
 
         <h2 class="fw-bold mb-2 freebie-card-title text-start">Buat Akun</h2>
         <p class="text-start mb-5">Buat akun untuk masuk ke Ajoor.</p>

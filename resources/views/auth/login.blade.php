@@ -3,7 +3,7 @@
 @section('content')
     <section class="login-user">
       <div class="left p-5">
-        <a href="{{ route('home') }}"><img class="mb-5" src="{{ asset('assets/Logo.jpg') }}" alt="" width="48" height="60"></a>
+        <a href="{{ route('home') }}"><img class="mb-5" src="{{ asset('assets/ajoor-logo.png') }}" alt="" width="48" height="60"></a>
 
         @if(session()->has('success'))
           <div class="alert alert-success alert-dismissible fade show" role="alert">

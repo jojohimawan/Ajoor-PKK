@@ -13,7 +13,9 @@
             <h1 class="display-5 fw-bold lh-1 mb-3">Pilih. Unduh. Modifikasi. Mulai Project Dengan Cepat</h1>
             <p class="lead">Ajoor menyediakan pilihan aset desain terbaik siap pakai untuk kebutuhan project anda.</p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <button type="button" class="btn text-white btnhero me-md-2">Jelajahi Ajoor</button>
+              <a href="#jelajahi">
+                <button type="button" class="btn text-white btnhero me-md-2">Jelajahi Ajoor</button>
+              </a>
             </div>
           </div>
         </div>
@@ -66,7 +68,7 @@
     <!-- Keunggulan End -->
 
     <!-- Aset Pilihan -->
-    <section class="produk mt-5 mb-5 p-5">
+    <section class="produk mt-5 mb-5 p-5" id="jelajahi">
       <div class="container">
         <div class="text-start">
           <h2 class="fw-bold col-lg-6 col-sm-1 mx-start mb-5">
@@ -77,11 +79,13 @@
           @foreach ($getProduct as $item)
             <div class="col-lg-4 col-sm-1">
               <div class="card"> <!-- Content Item 1 Start-->
-                <div class="cardhead">
-                  <img src="{{ asset('image/' . $item->image) }}" class="card-img-top" alt="..." height="250px">
-                  <a href="" class="d-flex justify-content-center overlay">
-                    <img src="{{ asset('assets/detail.png') }}" class="align-self-center">
-                  </a>
+                <div class="card-head">
+                  <img src="{{ asset('image/' . $item->image) }}" class="card-img-top">
+                  <div class="cover">
+                    <a href="detail/{{ $item->id }}" class="d-flex justify-content-center overlay">
+                      <img src="{{ asset('assets/detail.png') }}" class="align-self-center">
+                    </a>
+                  </div>
                 </div>
                 <div class="card-body">
                   <div class="row">

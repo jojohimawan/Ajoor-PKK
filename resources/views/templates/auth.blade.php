@@ -11,7 +11,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="shortcut icon" href="{{ asset('assets/ajoor-logo.ico') }}" type="image/x-icon">
-    <title>Ajoor {{ $title }}</title>
+    <title>{{ $title }}</title>
   </head>
   <body>
 

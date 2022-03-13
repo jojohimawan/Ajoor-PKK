@@ -5,8 +5,8 @@
     <section class="uikit-header mt-5 mb-5 p-5">
         <div class="container">
             <div class="text-center">
-                <h1 class="display-5 fw-bold lh-1 mb-3">Unduh {{ $category }}</h1>
-                <p class="lead">Pilihan {{ $category }} untuk percepat project terbaik anda</p>
+                <h1 class="display-5 fw-bold lh-1 mb-3">Unduh {{ $title }}</h1>
+                <p class="lead">Pilihan {{ $title }} untuk percepat project terbaik anda</p>
             </div>
         </div>
     </section>    
@@ -32,7 +32,7 @@
                   <div class="row">
                     <div class="col">
                       <h5 class="card-category">{{ $item->name }}</h5>
-                      <p class="card-text">{{ $category }}</p>
+                      <p class="card-text">{{ $title }}</p>
                     </div>
                     <div class="col text-end">
                         @if ($item->type == 1)
